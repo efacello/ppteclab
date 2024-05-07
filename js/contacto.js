@@ -1,6 +1,5 @@
 // Validar el formulario
 function validarFormulario() {  
-  console.log("La función validarFormulario() se está ejecutando correctamente.");
   var nombre = document.getElementById("nombre").value;
   var email = document.getElementById("email").value;
   var telefono = document.getElementById("tel").value;
@@ -42,14 +41,14 @@ function validarFormulario() {
     Swal.fire({
       icon: 'success',
       title: '¡Muchas gracias!',
-      text: 'Los datos se han enviado correctamente, en breve me comunico con vos.'
+      text: 'Los datos se han enviado correctamente, en breve me comunico con vos.',
+      timer: 40000
     });
   return true;
 }
 
 // Asignar la funcion de validación al evento submit
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-  console.log("El evento submit se está ejecutando.");
   // Prevenir que se envie el formulario si la validación no es exitosa
   if (!validarFormulario()) {
     event.preventDefault();
