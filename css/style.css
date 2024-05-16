@@ -216,33 +216,6 @@
 	margin-right: 10px;
 }
 
-@media (min-width: 576px) {
-	.contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-	.contact-wrapper>* {
-		padding: 2em;
-	}
-
-	.contact-info h3 {
-		text-align: left;
-	}
-
-	.contact-info h4 {
-		text-align: left;
-	}
-
-	.contact-info ul {
-		text-align: left;
-	}
-
-	.contact-info p {
-		text-align: left;
-	}
-}
-
 .accordion {
 	margin: 0 auto;
 	max-width: 70rem;
@@ -634,7 +607,7 @@ p {
 	filter: blur(2px);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     .navbar-brand {
         font-size: 20px;
     }
@@ -653,7 +626,7 @@ p {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     .formulario {
         max-width: 90%;
     }
@@ -667,7 +640,7 @@ p {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     .accordion {
         max-width: 90%;
         margin-left: auto;
@@ -683,7 +656,7 @@ p {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     .img-flexibility,
     .img-plan,
     .img-follow,
