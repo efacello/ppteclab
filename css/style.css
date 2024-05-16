@@ -201,7 +201,7 @@
 	background-color: #389928;
 }
 #appointment-form p {
-	margin-bottom: 20px; /* Ajusta el espacio entre los párrafos si es necesario */
+	margin-bottom: 20px; 
 }
 
 #appointment-form label {
@@ -218,9 +218,9 @@
 
 @media (min-width: 576px) {
 	.contact-wrapper {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-	}
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 
 	.contact-wrapper>* {
 		padding: 2em;
@@ -632,4 +632,69 @@ p {
 
 .redes-container:hover a {
 	filter: blur(2px);
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .formulario {
+        max-width: 90%;
+    }
+
+    .contact-form form {
+        display: block;
+    }
+
+    .contact-form form .block {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .accordion {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .accordion li label {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-flexibility,
+    .img-plan,
+    .img-follow,
+    .img-analysis {
+        height: 250px;
+    }
+
+    .desc-flexibility h2,
+    .desc-plan h2,
+    .desc-follow h2,
+    .desc-analysis h2 {
+        font-size: 22px;
+    }
 }
